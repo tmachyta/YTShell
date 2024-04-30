@@ -17,11 +17,9 @@ To set up the project, follow these steps:
 Make sure you have the following software installed on your system:
 
 - Java Development Kit (JDK) 17 or higher
-- Spring Boot 2.2 or higher
+- Spring Boot 3 or higher
 - Apache Maven
 - Apache Tomcat vesion 9 or higher
-- DataBase: MySQL
-- docker
 
 ### Installation
 - First of all, you should made your fork
@@ -29,10 +27,14 @@ Make sure you have the following software installed on your system:
 - past link, which you clone later
 
 ### Replace Placeholders:
-To connect to your DB, you should replace PlaceHolders in .env
-- Open package resources and open file env in your project.
-- Locate the placeholders that need to be replaced.
-- These placeholders might include values such as
-- MYSQL_USER= YOUR_USERNAME -> replace with your MySQL_DB
+To connect to your youtube, you should replace PlaceHolders in .application.properties
+- Change YOUTUBE_CHANNEL_ID - to your youtube.channel-id
+- Chnage YOUTUBE_KEY - to your youtube.key
 
 # Commands 🤌:
+- filter-by-views: List videos by views || command useful: filter-by-views --views views
+- filter-by-year: List videos by year || command useful: filter-by-year --year year
+- report: Run a report based on all of the videos of the current year
+- filter-by-likes: List videos by likes || command useful: filter-by-likes --likes likes
+- recent: List recent videos by max count || command useful: recent --max max
+- filter-by-first-letter: List videos by first letter title || command useful: filter-by-first-letter --letter letter
